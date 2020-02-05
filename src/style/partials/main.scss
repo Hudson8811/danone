@@ -1,0 +1,153 @@
+$Bold: "Conv_Kudryashev Bold", sans-serif;
+$Display: "Conv_Kudryashev Display", sans-serif;
+$Headline: "Conv_Kudryashev Headline", sans-serif;
+$Italic: "Conv_Kudryashev Italic", sans-serif;
+$OS: "Open Sans", sans-serif;
+a{
+	text-decoration: none;
+}
+
+body{
+	color: #3b3b3b;
+	font-size: 16px;
+	margin: 0;
+	background: #ffffff;
+}
+
+#jGrowl{
+  z-index: 999999;
+}
+
+*:focus{
+	outline: none;
+}
+
+.hide{
+	display: none;
+}
+
+#header-section{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: center / cover url(../../images/artbord1-bg.svg) no-repeat;
+	display: flex;
+	flex-direction: column;
+	#over{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 0;
+	}
+	.logo-block{
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 0 6vw;
+		z-index: 1;
+		.logo, .main-logo{
+			a{
+				display: block;
+			}
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		.logo{
+			width: 11.8vw;
+			margin-left: -1vw;
+		}
+		.main-logo{
+			width: 11.8vw;
+		}
+	}
+	.main-block{
+		position: relative;
+		display: flex;
+		align-items: center;
+		z-index: 1;
+		align-self: center;
+		justify-self: center;
+		margin: auto;
+		> div{
+			flex-shrink: 0;
+		}
+		.left-block{
+			position: relative;
+			width: 25vw;
+			margin-right: -16.1vw;
+			z-index: 2;
+			.big-text{
+				display: block;
+				font-size: 8.3vw;
+				line-height: 5.7vw;
+				font-family:$Bold;
+				color:#fff;
+				.italic{
+					font-family:$Italic;
+				}
+			}
+			.little-text{
+				display: flex;
+				align-items: center;
+				height:3.6vw;
+				width: 21.4vw;
+				text-transform: uppercase;
+				font-size: 1.4vw;
+				font-family: $OS;
+				color:#243468;
+				background-color: #e7ff00;
+				margin-top: 0.67vw;
+			}
+			.one{
+				left: 0;
+				top: -32%;
+				position: absolute;
+				display: block;
+				width: 13.5vw;
+
+			}
+		}
+		.center-block{
+			position: relative;
+			width: 61.4vw;
+			z-index: 1;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		.right-block{
+			position: relative;
+			width: 23.4vw;
+			margin-left: -5.7vw;
+			z-index: 3;
+			padding: 3.1vw 3.8vw 3.1vw 1.8vw;
+			box-sizing: border-box;
+			background-color:#18b4ef;
+			p{
+				font-size: 1.5vw;
+				line-height: 1.8vw;
+				font-family: $OS;
+				color:#243468;
+			}
+		}
+	}
+	.next-section-button{
+		position: relative;
+		display: block;
+		width: 2.3vw;
+		margin: auto;
+		z-index: 1;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+}
