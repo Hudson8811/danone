@@ -8,10 +8,10 @@ a{
 }
 
 body{
-	color: #3b3b3b;
+	color: #243468;
 	font-size: 16px;
 	margin: 0;
-	background: #ffffff;
+	background: #d6edec;
 }
 
 #jGrowl{
@@ -148,6 +148,223 @@ body{
 		img{
 			display: block;
 			width: 100%;
+		}
+	}
+}
+
+#main-section{
+	#menu{
+		display: flex;
+		width: 100vw;
+		justify-content: space-between;
+		list-style: none;
+		padding:1.5vw 4.3vw;
+		box-sizing:border-box;
+		a{
+			position: relative;
+			font-family: $Italic;
+			font-size: 1vw;
+			color:#243468;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				display: block;
+				width: 100%;
+				height: 0.1vw;
+				background-color:#243468;
+			}
+			&.active{
+				font-family: $Bold;
+				color:#18b4ef;
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+	#grid-block{
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 50% 50%;
+		.heading-block{
+			display: flex;
+			align-items:center;
+			.one{
+				margin-right: -4vw;
+				margin-bottom: -5vw;
+				margin-left: -2vw;
+				font-family: $Bold;
+				font-size: 28.1vw;
+				line-height: 5.1vw;
+				color:#d6edec;
+				text-shadow:
+				-1px -1px 0 #243468,
+				1px -1px 0 #243468,
+				-1px 1px 0 #243468,
+				1px 1px 0 #243468;
+			}
+			.text-block{
+				span{
+					display: block;
+					font-family: $Italic;
+					font-size: 1.8vw;
+					line-height: 5.7vw;
+				}
+				.ah2{
+					font-size: 6.2vw;
+					line-height: 5.1vw;
+					color: #18b4ef;
+					&.bold{
+						font-family: $Bold;
+					}
+				}
+				p{
+					display: block;
+					margin-top: 1.4vw;
+					font-family: $OS;
+					font-weight: 300;
+					font-size: 1vw;
+				}
+			}
+		}
+		.text{
+			display: block;
+			font-family: $OS;
+			font-size: 1.5vw;
+			line-height: 2vw;
+		}
+		.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8 {box-sizing:border-box;position: relative;}
+		.grid-image{
+			display: block;
+			width: 100%;
+		}
+		.grid-item1{
+			padding-left: 11.6vw;
+			.text{
+				box-sizing:border-box;
+				padding-right: 6.5vw;
+				margin-top: 7.8vw;
+			}
+		}
+		.grid-item2{
+			align-self:center;
+			.grid-abs{
+				position: absolute;
+				left: -9.6vw;
+				bottom: -10.4vw;
+				display: block;
+				width: 26vw;
+			}
+		}
+		.grid-item3{
+			padding:7.2vw 8vw 7.2vw 11.6vw;
+			text-align: center;
+			span{
+				display: block;
+				font-size: 2.1vw;
+				line-height: 2.5vw;
+				color: #18b4ef;
+				font-family: $Italic;
+			}
+		}
+		.grid-item4{
+			padding: 5.5vw 14.6vw 3.9vw 5.7vw;
+			span{
+				display: block;
+				font-size: 1.5vw;
+				line-height: 2vw;
+				font-family: $OS;
+				margin-bottom: 2.6vw;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.grid-item5{
+			margin-top: -8.3vw;
+			.image-block{
+				position: relative;
+				.abs-text{
+					position: absolute;
+					left: -19.5vw;
+					top: 7.5vw;
+					transform: rotate(-90deg);
+					font-family: $Italic;
+					font-size: 17.5vw;
+					line-height: 2.5vw;
+					color: #e7ff00;
+				}
+			}
+			.text{
+				padding:2.6vw 7.1vw 2vw 11.6vw;
+			}
+		}
+		.grid-item6{
+			.image-block{
+				position: relative;
+				margin-left: -4.6vw;
+				height: 84.8vw;
+				overflow: hidden;
+				padding-bottom: 5vw;
+				img{
+					width: auto;
+					height: 100%;
+				}
+				.abs-text{
+					position: absolute;
+					right:-36.5vw;
+					bottom: 42vw;
+					transform: rotate(-90deg);
+					font-family: $Italic;
+					font-size: 17.5vw;
+					line-height: 2.5vw;
+					color: #e7ff00;
+				}
+			}
+		}
+		.grid-item7{
+			background-color:#18b4ef;
+			padding:3.1vw 7.9vw 7.5vw 11.6vw;
+			margin-top: -8.6vw;
+			.heading{
+				border: 0.1vw solid #fff;
+				padding: 1.6vw 6.4vw 1.6vw 1.8vw;
+				box-sizing:border-box;
+				margin-bottom: 3.1vw;
+				span{
+					font-size: 3.75vw;
+					line-height: 3.75vw;
+					font-family: $Italic;
+					color: #fff;
+				}
+			}
+			.grid-abs{
+				position: absolute;
+				left: -5.5vw;
+				bottom: -11.45vw;
+				display: block;
+				width: 28.9vw;
+			}
+		}
+		.grid-item8{
+			padding: 4.7vw 14.6vw 2.9vw 5.7vw;
+			.italic{
+				font-family: $Italic;
+				font-size: 2.1vw;
+				line-height: 3.1vw;
+				color: #18b4ef;
+				margin-top: 4.6vw;
+				display: block;
+			}
+			.grid-abs{
+				position: absolute;
+				right: 0vw;
+				bottom: -10vw;
+				display: block;
+				width: 23vw;
+			}
 		}
 	}
 }
