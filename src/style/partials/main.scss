@@ -138,6 +138,9 @@ body{
 			background-color:#18b4ef;
 			p{
 				font-size: 1.65vw;
+				@media screen and (max-width:1800px) {
+					font-size: 1.3vw;
+				}
 				line-height: 2vw;
 				font-family: $OS;
 				color:#243468;
