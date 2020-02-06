@@ -28,8 +28,9 @@ body{
 
 #header-section{
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
+	overflow: hidden;
 	background: center / cover url(../../images/artbord1-bg.svg) no-repeat;
 	display: flex;
 	flex-direction: column;
@@ -48,7 +49,7 @@ body{
 		justify-content: space-between;
 		align-items: center;
 		box-sizing: border-box;
-		padding: 0 6vw;
+		padding: 1vw 6vw;
 		z-index: 1;
 		.logo, .main-logo{
 			a{
@@ -60,8 +61,8 @@ body{
 			}
 		}
 		.logo{
-			width: 11.8vw;
-			margin-left: -1vw;
+			width: 14vw;
+    margin-left: -1.3vw;
 		}
 		.main-logo{
 			width: 11.8vw;
@@ -74,14 +75,15 @@ body{
 		z-index: 1;
 		align-self: center;
 		justify-self: center;
-		margin: auto;
+		margin: 0.4vw auto;
 		> div{
 			flex-shrink: 0;
 		}
 		.left-block{
 			position: relative;
 			width: 25vw;
-			margin-right: -16.1vw;
+			margin-right: -18.1vw;
+			margin-top: 3vw;
 			z-index: 2;
 			.big-text{
 				display: block;
@@ -106,8 +108,8 @@ body{
 				margin-top: 0.67vw;
 			}
 			.one{
-				left: 0;
-				top: -32%;
+				left: -3%;
+				top: -30%;
 				position: absolute;
 				display: block;
 				width: 13.5vw;
@@ -117,6 +119,9 @@ body{
 		.center-block{
 			position: relative;
 			width: 61.4vw;
+			@media screen and (max-width:1800px) {
+				width: 50vw;
+			}
 			z-index: 1;
 			img{
 				display: block;
@@ -125,15 +130,15 @@ body{
 		}
 		.right-block{
 			position: relative;
-			width: 23.4vw;
-			margin-left: -5.7vw;
+			width: 23vw;
+			margin-left: -6vw;
 			z-index: 3;
-			padding: 3.1vw 3.8vw 3.1vw 1.8vw;
+			padding: 3.1vw 2vw 3.1vw 1.8vw;
 			box-sizing: border-box;
 			background-color:#18b4ef;
 			p{
-				font-size: 1.5vw;
-				line-height: 1.8vw;
+				font-size: 1.65vw;
+				line-height: 2vw;
 				font-family: $OS;
 				color:#243468;
 			}
@@ -153,6 +158,7 @@ body{
 }
 
 #main-section{
+	overflow: hidden;
 	#menu{
 		display: flex;
 		width: 100vw;
@@ -196,7 +202,7 @@ body{
 			.one{
 				margin-right: -4vw;
 				margin-bottom: -5vw;
-				margin-left: -2vw;
+				margin-left: -2.8vw;
 				font-family: $Bold;
 				font-size: 28.1vw;
 				line-height: 5.1vw;
@@ -211,8 +217,11 @@ body{
 				span{
 					display: block;
 					font-family: $Italic;
-					font-size: 1.8vw;
+					font-size: 1.88vw;
 					line-height: 5.7vw;
+					&:first-child{
+						padding-left: 1vw;
+					}
 				}
 				.ah2{
 					font-size: 6.2vw;
@@ -220,6 +229,8 @@ body{
 					color: #18b4ef;
 					&.bold{
 						font-family: $Bold;
+						padding: 0;
+						margin: 0;
 					}
 				}
 				p{
@@ -227,15 +238,16 @@ body{
 					margin-top: 1.4vw;
 					font-family: $OS;
 					font-weight: 300;
-					font-size: 1vw;
+					font-size: 1.14vw;
+					padding-right: 3.15vw;
 				}
 			}
 		}
 		.text{
 			display: block;
 			font-family: $OS;
-			font-size: 1.5vw;
-			line-height: 2vw;
+			font-size: 1.62vw;
+			line-height: 2.1vw;
 		}
 		.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8 {box-sizing:border-box;position: relative;}
 		.grid-image{
@@ -247,7 +259,7 @@ body{
 			.text{
 				box-sizing:border-box;
 				padding-right: 6.5vw;
-				margin-top: 7.8vw;
+				margin-top: 6.8vw;
 			}
 		}
 		.grid-item2{
@@ -261,24 +273,24 @@ body{
 			}
 		}
 		.grid-item3{
-			padding:7.2vw 8vw 7.2vw 11.6vw;
+			padding:7.2vw 2vw 7.2vw 13vw;
 			text-align: center;
 			span{
 				display: block;
-				font-size: 2.1vw;
+				font-size: 2.3vw;
 				line-height: 2.5vw;
 				color: #18b4ef;
 				font-family: $Italic;
 			}
 		}
 		.grid-item4{
-			padding: 5.5vw 14.6vw 3.9vw 5.7vw;
+			padding: 5.4vw 11.4vw 4.9vw 5.7vw;
 			span{
 				display: block;
-				font-size: 1.5vw;
+				font-size: 1.67vw;
 				line-height: 2vw;
 				font-family: $OS;
-				margin-bottom: 2.6vw;
+				margin-bottom: 2vw;
 				&:last-child{
 					margin-bottom: 0;
 				}
@@ -287,11 +299,12 @@ body{
 		.grid-item5{
 			margin-top: -8.3vw;
 			.image-block{
+				margin-top: 0.5vw;
 				position: relative;
 				.abs-text{
 					position: absolute;
-					left: -19.5vw;
-					top: 7.5vw;
+					left: -20vw;
+					top: 9vw;
 					transform: rotate(-90deg);
 					font-family: $Italic;
 					font-size: 17.5vw;
@@ -300,7 +313,7 @@ body{
 				}
 			}
 			.text{
-				padding:2.6vw 7.1vw 2vw 11.6vw;
+				padding:2.6vw 7.1vw 2vw 11vw;
 			}
 		}
 		.grid-item6{
@@ -328,13 +341,14 @@ body{
 		}
 		.grid-item7{
 			background-color:#18b4ef;
-			padding:3.1vw 7.9vw 7.5vw 11.6vw;
-			margin-top: -8.6vw;
+			padding:3.1vw 5vw 7.5vw 11.6vw;
+			margin-top: -10vw;
 			.heading{
 				border: 0.1vw solid #fff;
-				padding: 1.6vw 6.4vw 1.6vw 1.8vw;
+				padding: 1.2vw 6.4vw 1.2vw 1.8vw;
 				box-sizing:border-box;
-				margin-bottom: 3.1vw;
+				margin-bottom: 2.5vw;
+				margin-right: 2vw;
 				span{
 					font-size: 3.75vw;
 					line-height: 3.75vw;
@@ -352,12 +366,14 @@ body{
 		}
 		.grid-item8{
 			padding: 4.7vw 14.6vw 2.9vw 5.7vw;
+			margin-top: -7vw;
+			background-color:#d6edec;
 			.italic{
 				font-family: $Italic;
-				font-size: 2.1vw;
+				font-size: 2.3vw;
 				line-height: 3.1vw;
 				color: #18b4ef;
-				margin-top: 4.6vw;
+				margin-top: 2vw;
 				display: block;
 			}
 			.grid-abs{
@@ -373,8 +389,11 @@ body{
 
 #bottom-section{
 	margin-top: -4vw;
+	overflow: hidden;
 	.heading-block{
-		text-align: center;
+		width: 49vw;
+		margin: 0 auto;
+		margin-top: -1vw;
 		span{
 			display: block;
 			font-size: 3.1vw;
@@ -399,7 +418,7 @@ body{
 			min-height: 42.5vw;
 			background-color:#243468;
 			box-sizing:border-box;
-			padding: 4.5vw 1.5vw 5.8vw 2vw;
+			padding: 4.5vw 1.5vw 3.8vw 2vw;
 			.top-block{
 				display: flex;
 				align-items:center;
@@ -409,7 +428,7 @@ body{
 				}
 				.left-block{
 					height: 14.5vw;
-					margin-left: -5.3vw;
+					margin-left: -6vw;
 					margin-top: -7.3vw;
 					img{
 						height: 100%;
@@ -436,13 +455,12 @@ body{
 				}
 			}
 			.text{
-				font-size: 1.2vw;
-				line-height: 1.4vw;
+				font-size: 1.46vw;
+				line-height: 1.47vw;
 				font-family: $OS;
-				font-weight: 500;
+				font-weight: 600;
 				color: #fff;
 				box-sizing: border-box;
-				padding-right: 3.9vw;
 				margin-top: 1.8vw;
 			}
 		}
