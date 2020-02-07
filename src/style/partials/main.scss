@@ -654,6 +654,13 @@ body{
 					font-size: 10vw;
 					display: block;
 					text-align: center;
+					text-decoration: underline;
+					&:before{
+						display: none;
+					}
+					&.active{
+						text-decoration: none;
+					}
 				}
 			}
 			&.active{
