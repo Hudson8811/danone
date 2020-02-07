@@ -60,13 +60,14 @@ $('.btn').click(function () {
 });
 
 var swiper = new Swiper('.swiper-container', {
+    init: false,
     direction: 'horizontal',
     spaceBetween: 200,
+    autoHeight: true,
     pagination: {
         el: '.swiper-pagination',
     },
 })
-
 
 function resizeScrenn() {
     if ($(window).width() <= 751) {
