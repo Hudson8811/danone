@@ -4,6 +4,7 @@
 //= libs/jquery.fancybox.min.js
 //= libs/jquery.maskedinput.min.js
 //= libs/wow.min.js
+//= libs/swiper.min.js
 /* my scripts */
 
 //= partials/main.js

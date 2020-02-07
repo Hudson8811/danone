@@ -12,3 +12,27 @@ $(document).ready(function () {
 });
 
 new WOW().init();
+
+$('.btn').click(function () {
+    $('nav').toggleClass('active');
+});
+
+var swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    spaceBetween: 200,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+})
+
+
+function resizeScrenn() {
+    if ($(window).width() <= 751) {
+        swiper.init()
+    } else {
+        swiper.destroy();
+    }
+}
+
+resizeScrenn();
+$(window).resize(resizeScrenn);
