@@ -16,11 +16,11 @@ body{
 .inst{
 	display: flex;
 	align-items:center;
-	font-size: 1vw;
-	margin-top: 1.5vw;
+	font-size: 0.75vw;
+	margin-top: 0.7vw;
 	img{
-		width: 1vw;
-		height: 1vw;
+		width: 0.75vw;
+		height: 0.75vw;
 		display: block;
 		flex-shrink: 0;
 		margin-right: 0.5vw;
@@ -63,14 +63,14 @@ body{
 	}
 }
 .right-arrow{
-	right: 3%;
+	right: 2%;
 	transform: rotate(180deg);
 	&:after{
 		margin-top: -0.8vw;
 	}
 }
 .left-arrow{
-	left: 3%;
+	left: 2%;
 	&:after{
 		margin-top: -0.8vw;
 	}
@@ -235,6 +235,7 @@ body{
 		list-style: none;
 		padding:1.5vw 4.3vw;
 		box-sizing:border-box;
+		
 		a{
 			position: relative;
 			font-family: $Italic;
@@ -264,17 +265,22 @@ body{
 		grid-template-rows: auto;
 		grid-template-columns: 50% 50%;
 		overflow: hidden;
+		@media screen and(min-width:752px) {
+			padding: 0 5.2vw;
+			padding-bottom: 12.1vw;
+		}
 		padding-bottom: 12.1vw;
+		box-sizing: border-box;
 		.heading-block{
 			display: flex;
 			align-items:center;
 			.one{
-				margin-right: -4vw;
-				margin-bottom: -5vw;
-				margin-left: -2.8vw;
+				margin-right: -3.75vw;
+				margin-bottom: -3.75vw;
+				margin-left: -2.1vw;
 				font-family: $Bold;
-				font-size: 28.1vw;
-				line-height: 5.1vw;
+				font-size: 21.1vw;
+				line-height: 3.9vw;
 				color:#d6edec;
 				text-shadow:
 				-1px -1px 0 #243468,
@@ -286,15 +292,15 @@ body{
 				span{
 					display: block;
 					font-family: $Italic;
-					font-size: 1.88vw;
-					line-height: 5.7vw;
+					font-size: 1.41vw;
+					line-height: 4.3vw;
 					&:first-child{
-						padding-left: 1vw;
+						padding-left: 0.75vw;
 					}
 				}
 				.ah2{
-					font-size: 6.2vw;
-					line-height: 5.1vw;
+					font-size: 4.7vw;
+					line-height: 3.9vw;
 					color: #18b4ef;
 					&.bold{
 						font-family: $Bold;
@@ -304,19 +310,19 @@ body{
 				}
 				p{
 					display: block;
-					margin-top: 1.4vw;
+					margin-top: 1.1vw;
 					font-family: $OS;
 					font-weight: 300;
-					font-size: 1.14vw;
-					padding-right: 3.15vw;
+					font-size: 0.9vw;
+					padding-right: 8vw;
 				}
 			}
 		}
 		.text{
 			display: block;
 			font-family: $OS;
-			font-size: 1.62vw;
-			line-height: 2.1vw;
+			font-size: 1.2vw;
+			line-height: 1.6vw;
 		}
 		.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8 {box-sizing:border-box;position: relative;}
 		.grid-image{
@@ -324,12 +330,12 @@ body{
 			width: 100%;
 		}
 		.grid-item1{
-			padding-left: 7.6vw;
+			padding-left: 5.7vw;
 			z-index: 10;
 			.text{
 				box-sizing:border-box;
-				padding-right: 6.5vw;
-				margin-top: 6.8vw;
+				padding-right: 5vw;
+				margin-top: 5.1vw;
 			}
 		}
 		.grid-item2{
@@ -343,13 +349,13 @@ body{
 			}
 		}
 		.grid-item3{
-			padding:7.2vw 2vw 7.2vw 7.6vw;
+			padding:5.4vw 2vw 5.4vw 5.7vw;
 			text-align: center;
 			z-index: 10;
 			span{
 				display: block;
-				font-size: 2.3vw;
-				line-height: 2.5vw;
+				font-size: 1.8vw;
+				line-height: 1.9vw;
 				color: #18b4ef;
 				font-family: $Italic;
 			}
@@ -358,17 +364,17 @@ body{
 			padding: 5.4vw 7.6vw 4.9vw 5.7vw;
 			span{
 				display: block;
-				font-size: 1.67vw;
-				line-height: 2vw;
+				font-size: 1.26vw;
+				line-height: 1.5vw;
 				font-family: $OS;
-				margin-bottom: 2vw;
+				margin-bottom: 1,5vw;
 				&:last-child{
 					margin-bottom: 0;
 				}
 			}
 		}
 		.grid-item5{
-			margin-top: -8.3vw;
+			margin-top: -6.1vw;
 			.image-block{
 				margin-top: 0.5vw;
 				position: relative;
@@ -385,15 +391,15 @@ body{
 					left: 0;
 					top: 0;
 					font-family: $Italic;
-					font-size: 17.5vw;
+					font-size: 13.2vw;
 					line-height: 2.5vw;
 					color: #e7ff00;
-					margin-top: -1vw;
+					margin-top: -2vw;
 					display: block;
 				}
 			}
 			.text{
-				padding:2.6vw 7.1vw 2vw 7.6vw;
+				padding:2.6vw 7.1vw 2vw 5.7vw;
 			}
 		}
 		.grid-item6{
@@ -401,8 +407,8 @@ body{
 			z-index: 5;
 			.image-block{
 				position: relative;
-				margin-left: -4.6vw;
-				height: 84.8vw;
+				margin-left: -2.8vw;
+				height: 63.8vw;
 				overflow: hidden;
 				padding-bottom: 5vw;
 				img{
@@ -421,16 +427,16 @@ body{
 			.abs-text{
 				position: relative;
 				font-family: $Italic;
-				font-size: 17.5vw;
+				font-size: 13.2vw;
 				line-height: 2.5vw;
 				color: #e7ff00;
-				margin-top: 13vw;
+				margin-top: 6.5vw;
 				display: block;
 			}
 		}
 		.grid-item7{
 			background-color:#18b4ef;
-			padding:3.1vw 5vw 7.5vw 7.6vw;
+			padding:3.1vw 5vw 7.5vw 5.7vw;
 			margin-top: -10vw;
 			position: relative;
 			z-index: 5;
@@ -438,11 +444,11 @@ body{
 				border: 0.1vw solid #fff;
 				padding: 1.2vw 6.4vw 1.2vw 1.8vw;
 				box-sizing:border-box;
-				margin-bottom: 2.5vw;
+				margin-bottom: 1.8vw;
 				margin-right: 2vw;
 				span{
-					font-size: 3.75vw;
-					line-height: 3.75vw;
+					font-size: 3vw;
+					line-height: 3vw;
 					font-family: $Italic;
 					color: #fff;
 				}
@@ -456,13 +462,13 @@ body{
 			}
 		}
 		.grid-item8{
-			padding: 4.7vw 7.6vw 2.9vw 5.7vw;
+			padding: 3.6vw 7.6vw 2.2vw 5.7vw;
 			margin-top: -7vw;
 			background-color:#d6edec;
 			.italic{
 				font-family: $Italic;
-				font-size: 2.3vw;
-				line-height: 3.1vw;
+				font-size: 1.8vw;
+    		line-height: 1.9vw;
 				color: #18b4ef;
 				margin-top: 2vw;
 				display: block;
@@ -479,6 +485,10 @@ body{
 }
 
 #bottom-section{
+	@media screen and (min-width:1024px){
+		width: calc(100% - 10.4vw);
+		margin: 0 auto;
+	}
 	margin-top: -4vw;
 	overflow: hidden;
 	.production{
@@ -489,13 +499,13 @@ body{
 		text-align: center;
 	}
 	.heading-block{
-		width: 49vw;
+		width: 37vw;
 		margin: 0 auto;
-		margin-top: -1vw;
+		margin-top: 0vw;
 		span{
 			display: block;
-			font-size: 3.1vw;
-			line-height: 3.1vw;
+			font-size: 2.4vw;
+			line-height: 2.4vw;
 			&:first-child{
 				font-family: $Italic;
 			}
@@ -508,9 +518,9 @@ body{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: auto;
-		grid-column-gap: 5.5vw;
+		grid-column-gap: 4.2vw;
 		box-sizing:border-box;
-		padding: 5.5vw;
+		padding: 4.9vw;
 		padding-top: 6.5vw;
 		.grid-item1, .grid-item2, .grid-item3 {
 			min-height: 42.5vw;
@@ -525,9 +535,9 @@ body{
 					display: block;
 				}
 				.left-block{
-					height: 14.5vw;
-					margin-left: -6vw;
-					margin-top: -7.3vw;
+					height: 10.9vw;
+					margin-left: -4.5vw;
+					margin-top: -5.5vw;
 					img{
 						height: 100%;
 					}
@@ -538,22 +548,22 @@ body{
 					span{
 						display: block;
 						font-family: $Italic;
-						font-size: 1.8vw;
-						line-height: 2.1vw;
+						font-size: 1.35vw;
+						line-height: 1.6vw;
 						color: #18b4ef;
 						text-decoration: underline;
 					}
 				}
 				.right-block{
 					flex-shrink: 0;
-					margin-top: -6.8vw;
+					margin-top: -5.1vw;
 					img{
 						width: 100%;
 					}
 				}
 			}
 			.text{
-				font-size: 1.46vw;
+				font-size: 1.4vw;
 				line-height: 1.47vw;
 				font-family: $OS;
 				font-weight: 600;
@@ -564,24 +574,73 @@ body{
 		}
 		.grid-item1{
 			.right-block{
-				width: 5.4vw;
+				width: 4.05vw;
 			}
 		}
 		.grid-item2{
 			.right-block{
-				width: 6.67vw;
-				margin-left: -5vw;
+				width: 5vw;
+				margin-left: -3,75vw;
 			}
 		}
 		.grid-item3{
 			.right-block{
-				width: 4.5vw;
+				width: 3.4vw;
 			}
 		}
 	}
 }
-
+.social-block{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1vw;
+}
+.social-block .soc-link {
+	border: none;
+	background: #243468;
+	width: 2.60417vw;
+	height: 2.60417vw;
+	border-radius: 50%;
+	margin: 0 0.3vw;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.social-block .soc-link svg {
+	width: 1.04167vw;
+	height: 1.04167vw;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+.social-block .soc-link svg * {
+	fill: #fff;
+}
 @media screen and (max-width:751px){
+	.social-block{
+		margin-bottom: 3vw;
+	}
+	.social-block .soc-link{
+		width: 4vw;
+		height: 4vw;
+	}
+	.social-block .soc-link svg{
+		width: 2vw;
+		height: 2vw;
+	}
+	.inst{
+		font-size: 2vw;
+		img{
+			width: 2vw;
+			height: 2vw;
+		}
+	}
 	#header-section {
 		.logo-block{
 			justify-content: flex-start;
